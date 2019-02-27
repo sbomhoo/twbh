@@ -184,7 +184,7 @@ create sequence comment_seq start with 1 increment by 1;
 ![게시글삭제](./img/게시글삭제.png)  
 
   
-**<게시글 수정1>**  
+**<게시글 수정 Form>**  
 ![게시글수정](./img/게시글수정.png)  
 
 
