@@ -1,11 +1,8 @@
 # The Way Back Home(TWBH)
 
 MVC MODEL2로 구현한 JSP/Servlet 커뮤니티 
-
- 
-
-***
-
+  
+    
 
 
 TWBH 구현 기능
@@ -18,7 +15,6 @@ TWBH 구현 기능
 -  댓글 입력
 -  좋아요 구현(Jquery Ajax 사용)
 
-***
 개발 환경 및 기술
 -------------
 - eclipse
@@ -47,7 +43,6 @@ server.xml 데이터베이스 커넥션 풀 추가 내용
       </Context>
 ```
 
-***
 
 회원 table db 쿼리문
 -------------
@@ -103,7 +98,6 @@ create table board_comment(
 create sequence comment_seq start with 1 increment by 1;
 </code></pre>
 
-***
 
 구현 화면
 -------------
@@ -142,7 +136,7 @@ create sequence comment_seq start with 1 increment by 1;
 ![아이디중복확인](./img/아이디중복확인.png)  
   
 
-**<회원가입_유효성검사1 >**
+**<회원가입_유효성검사>**  
 ![회원가입유효성검사1](./img/회원가입유효성검사1.png)  
   
 
