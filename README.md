@@ -2,7 +2,7 @@
 
 MVC MODEL2로 구현한 JSP/Servlet 커뮤니티 
   
-    
+***
 
 
 TWBH 구현 기능
@@ -98,7 +98,7 @@ create table board_comment(
 create sequence comment_seq start with 1 increment by 1;
 </code></pre>
 
-
+***
 구현 화면
 -------------
 
