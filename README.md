@@ -142,7 +142,7 @@ create sequence comment_seq start with 1 increment by 1;
 
 **<게시판 리스트>**  
 ![게시판list](./img/게시판list.png)  
-
+-  게시글 제목 옆에 댓글 갯수 보이게 
   
 **<내 정보>**  
 ![내정보](./img/내정보.png)  
