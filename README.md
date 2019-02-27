@@ -139,10 +139,6 @@ create sequence comment_seq start with 1 increment by 1;
 ![회원가입유효성검사1](./img/회원가입유효성검사1.png)  
 
 
-#회원가입_유효성검사2  
-![회원가입유효성검사2](./img/회원가입유효성검사2.png)  
-
-
 #게시판 리스트  
 ![게시판list](./img/게시판list.png)  
 
