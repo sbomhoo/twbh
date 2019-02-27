@@ -190,6 +190,6 @@ create sequence comment_seq start with 1 increment by 1;
 
 **<게시글 수정 후>**  
 ![게시글수정된모습](./img/게시글수정된모습.png)  
-- 사진이 추가 되고 글 밑에 '수정본'이라는 글씨로 변경 
+- 사진이 추가 / 제목 변경 / 글 '수정본'이라는 글씨 생김  
 
   
