@@ -21,6 +21,8 @@ TWBH 구현 기능
 - apache-tomcat-8.0.46
 - oracle 11g:xe
 - jsp/servlet 
+- javaScript
+- EL / JSTL
 - w3.css
 - jquery
 - Ajax
