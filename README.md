@@ -136,15 +136,17 @@ create sequence comment_seq start with 1 increment by 1;
 
 **<회원가입_아이디중복확인>**   
 ![아이디중복확인](./img/아이디중복확인.png)  
+- java script(member.js) 이용하여 유효성검사를 실시 
   
-
+  
 **<회원가입_유효성검사>**  
 ![회원가입유효성검사1](./img/회원가입유효성검사1.png)  
+- java script(member.js) 이용하여 유효성검사를 실시  
   
 
 **<게시판 리스트>**  
 ![게시판list](./img/게시판list.png)  
--  게시글 제목 옆에 댓글 갯수 보이게 
+-  게시글 제목 옆에 주황색 대괄호로 게시글의 댓글 갯수를 나타나게 구현  
   
 **<내 정보>**  
 ![내정보](./img/내정보.png)  
@@ -152,7 +154,7 @@ create sequence comment_seq start with 1 increment by 1;
   
 **<회원정보수정>**  
 ![회원정보수정](./img/회원정보수정.png)  
-
+  
   
 **<회원 탈퇴>**  
 ![회원탈퇴](./img/회원탈퇴.png)  
@@ -160,6 +162,10 @@ create sequence comment_seq start with 1 increment by 1;
 
 **<글 쓰기>**  
 ![게시글쓰기](./img/게시글쓰기.png)  
+-  글 입력시 multipartRequest를 사용하여 이미지도 같이 업로드 할 수 있게 구현
+-  이미지는 img폴더안에 저장이 되고 DB에는 이미지명과 확장자를 저장해둔다.
+-  게시글을 쓰기 위해서는 request 값을 두번 받아야하는데(커맨드와 폼입력값) 
+-  multipartRequest를 사용하니 값을 두번 가져올 수가 없어서 session을 통해 커맨드 값을 보내줌.  
   
 
 **<내가 쓴 글 보기>**  
@@ -172,8 +178,12 @@ create sequence comment_seq start with 1 increment by 1;
 ![남게시글](./img/남게시글.png)  
 -  남이 쓴 글에는 수정,삭제 버튼이 나타나지 않음
   
-**<좋아요 클릭/update>**  
+    
+**<좋아요 클릭>**  
 ![좋아요001](./img/좋아요001.png)  
+  
+    
+**<좋아요 update>**  
 ![좋아요002](./img/좋아요002.png)  
 -  ajax를 이용하여 페이지 이동 없이 좋아요를 누를 수 있도록 구현
 -  좋아요를 누르면 board.js의 like함수를 호출해 ajax.serialize()를 이용하여 서버단으로 데이터를 보냄
@@ -187,16 +197,18 @@ create sequence comment_seq start with 1 increment by 1;
 
 **<답글 쓰기2>**  
 ![답글쓰기2](./img/답글쓰기2.png)  
-
+- 답글 저장시 db에서 부모의 글번호를 ref로 저장하고 요청된 ref와 같은 데이터의 step을 1씩 증가 시킴  
+- 게시판 list에서 불러올 때 ref를 내림차순 기준으로 정렬을 하고 만약 ref가 같으면 step을 오름차순 기준으로 정렬함  
+  
   
 **<게시글 삭제>**  
 ![게시글삭제](./img/게시글삭제.png)  
-
   
+   
 **<게시글 수정 Form>**  
 ![게시글수정](./img/게시글수정.png)  
-
-
+  
+  
 **<게시글 수정 후>**  
 ![게시글수정된모습](./img/게시글수정된모습.png)  
 - 사진이 추가 / 제목 변경 / 글 '수정본'이라는 글씨 생김  
